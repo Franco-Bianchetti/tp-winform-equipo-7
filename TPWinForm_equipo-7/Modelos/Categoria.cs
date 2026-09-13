@@ -13,10 +13,10 @@ namespace TPWinForm_equipo_7.Modelos
 
         public Categoria() { }
 
-        public Categoria(int id, string descipcion)
+        public Categoria(int id, string descripcion)
         {
             Id = id;
-            Descripcion = descipcion;
+            Descripcion = descripcion;
         }
 
         public override string ToString()

@@ -8,6 +8,8 @@ namespace TPWinForm_equipo_7.Modelos
 {
     public class Imagen
     {
+        internal static readonly string FileName;
+
         public int Id { get; set; }
         public int IdArticulo {  get; set; }
         public string ImagenUrl { get; set; }
