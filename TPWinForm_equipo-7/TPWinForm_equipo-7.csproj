@@ -60,6 +60,7 @@
     <Compile Include="Interfaz\frmListadoArticulos.Designer.cs">
       <DependentUpon>frmListadoArticulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelos\ArticuloNegocio.cs" />
     <Compile Include="Modelos\Articulo.cs" />
     <Compile Include="Modelos\Categoria.cs" />
     <Compile Include="Modelos\Imagen.cs" />

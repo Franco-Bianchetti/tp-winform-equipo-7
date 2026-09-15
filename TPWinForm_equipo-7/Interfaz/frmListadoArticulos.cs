@@ -21,7 +21,15 @@ namespace TPWinForm_equipo_7.Interfaz
 
         private void frmListadoArticulos_Load(object sender, EventArgs e)
         {
-
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            try
+            {
+                dgvArticulos.DataSource = negocio.listar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -49,12 +57,11 @@ namespace TPWinForm_equipo_7.Interfaz
         {
             if (dgvArticulos.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Seleccioná un artículo.");
+                MessageBox.Show("Seleccione un artículo.");
                 return;
             }
 
-            int fila = dgvArticulos.SelectedRows[0].Index;
-            Articulo seleccionado = articulos[fila];
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
 
             DialogResult confirmacion = MessageBox.Show(
                 $"¿Seguro que querés eliminar \"{seleccionado.Nombre}\"?",
@@ -64,8 +71,24 @@ namespace TPWinForm_equipo_7.Interfaz
 
             if (confirmacion != DialogResult.Yes) return;
 
-            articulos.RemoveAt(fila); 
-            // CargarGrilla(); 
+            articulos.Remove(seleccionado);
+            dgvArticulos.DataSource = null;
+            dgvArticulos.DataSource = articulos; // refresca la grilla
+        }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            if (dgvArticulos.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Seleccione un artículo.");
+                return;
+            }
+
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+            // frmDetalleArticulo todavía no existe - lo armamos en el próximo paso
+            // frmDetalleArticulo frm = new frmDetalleArticulo(seleccionado);
+            // frm.ShowDialog();
         }
     }
 }
