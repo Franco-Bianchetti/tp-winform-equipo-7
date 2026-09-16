@@ -3,51 +3,162 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
+using Datos;
 using Dominio;
 
 namespace Negocio
 {
     public class ArticuloNegocio
     {
-        public List<Categoria> listar()
-        {
-            List<Categoria> lista = new List<Categoria>();
-            SqlConnection conexion = new SqlConnection();
-            SqlCommand comando = new SqlCommand();
-            SqlDataReader lector;
 
+        public List<Articulo> ListarArticulos()
+        {
+            List<Articulo> lista = new List<Articulo>();
+            AccesoDatos datos = new AccesoDatos();
             try
             {
-                conexion.ConnectionString = "server=.\\SQLEXPRESS; database=CATALOGO_P3_DB; integrated security=true";
-                comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "Select Marca, Categoria, UrlImagen From CATALOGO_DB";
-                comando.Connection = conexion;
+                datos.setearConsulta("select A.Id, A.Codigo, A.Nombre, A.Descripcion, A.IdMarca, A.IdCategoria, A.Precio, M.Descripcion Marca, C.Descripcion Categoria, I.ImagenUrl, I.Id IdImagen, I.IdArticulo from ARTICULOS A, MARCAS M, CATEGORIAS C left join IMAGENES I on I.IdArticulo = A.Id where C.Id = A.IdCategoria and M.Id = A.IdMarca");
+                datos.ejecutarLectura();
 
-                conexion.Open();
-                lector = comando.ExecuteReader();
-
-                while (lector.Read())
+                while (datos.Lector.Read())
                 {
-                    Articulo aux = new Articulo();
+                    int IdArticulo = (int)datos.Lector["Id"];
+                    Articulo existente = lista.FirstOrDefault(a => a.Id == IdArticulo);
+                    if (existente == null)
+                    {
+                        Articulo aux = new Articulo();
+                        aux.Id = (int)datos.Lector["Id"];
+                        aux.Codigo = (string)datos.Lector["Codigo"];
+                        aux.Nombre = (string)datos.Lector["Nombre"];
+                        aux.Descripcion = (string)datos.Lector["Descripcion"];
+                        aux.Precio = (decimal)datos.Lector["Precio"];
+                        aux.Marca = new Marca();
+                        aux.Marca.Id = (int)datos.Lector["IdMarca"];
+                        aux.Marca.Descripcion = (string)datos.Lector["Marca"];
+                        aux.Categoria = new Categoria();
+                        aux.Categoria.Id = (int)datos.Lector["IdCategoria"];
+                        aux.Categoria.Descripcion = (string)datos.Lector["Categoria"];
+                        aux.Imagenes = new List<Imagen>();
+                        if (!(datos.Lector["ImagenUrl"] is DBNull))
+                        {
+                            Imagen img = new Imagen
+                            {
+                                Id = (int)datos.Lector["IdImagen"],
+                                ImagenUrl = (string)datos.Lector["ImagenUrl"],
+                                IdArticulo = (int)datos.Lector["IdArticulo"]
 
-                    aux.Marca = (string)lector["Marca"];
-                    aux.Categoria = (string)lector["Categoria"];
-                    aux.UrlImagen = (string)lector["UrlImagen"];
+                            };
+                            aux.Imagenes.Add(img);
+                        }
+                        lista.Add(aux);
 
-                    lista.Add(aux);
+                    }
+                    else
+                    {
+                        if (!(datos.Lector["ImagenUrl"] is DBNull))
+                        {
+                            Imagen img = new Imagen
+                            {
+                                Id = (int)datos.Lector["IdImagen"],
+                                ImagenUrl = (string)datos.Lector["ImagenUrl"]
+                            };
+                            existente.Imagenes.Add(img);
+                        }
+
+
+
+                    }
                 }
-
-                conexion.Close();
                 return lista;
+
             }
             catch (Exception ex)
             {
 
                 throw ex;
             }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+        public void Agregar(Articulo articulo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("Insert into Articulos (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) values(@Codigo, @Nombre, @Descripcion, @IdMarca, @IdCategoria, @Precio); " + "Select SCOPE_IDENTITY()");
+                datos.setearParametro("@Codigo", articulo.Codigo);
+                datos.setearParametro("@Nombre", articulo.Nombre);
+                datos.setearParametro("@Descripcion", articulo.Descripcion);
+                datos.setearParametro("@IdMarca", articulo.Marca.Id);
+                datos.setearParametro("@IdCategoria", articulo.Categoria.Id);
+                datos.setearParametro("@Precio", articulo.Precio);
 
-            
+                articulo.Id = Convert.ToInt32(datos.ejecutarScalar());
+
+                datos.cerrarConexion();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void Modificar(Articulo articulo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("update Articulos set Codigo = @Codigo, Nombre = @Nombre, Descripcion = @Descripcion, IdMarca = @IdMarca, IdCategoria = @IdCategoria, Precio = @Precio where Id = @Id");
+                datos.setearParametro("@Codigo", articulo.Codigo);
+                datos.setearParametro("@Nombre", articulo.Nombre);
+                datos.setearParametro("@Descripcion", articulo.Descripcion);
+                datos.setearParametro("@IdMarca", articulo.Marca.Id);
+                datos.setearParametro("@IdCategoria", articulo.Categoria.Id);
+                datos.setearParametro("@Precio", articulo.Precio);
+                datos.setearParametro("@Id", articulo.Id);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
+        }
+
+        public void Eliminar(int id)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("Delete from Articulos where Id = @Id");
+                datos.setearParametro("@Id", id);
+                datos.ejecutarAccion();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
         }
     }
 }

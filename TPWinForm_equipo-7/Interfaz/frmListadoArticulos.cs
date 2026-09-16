@@ -26,9 +26,11 @@ namespace TPWinForm_equipo_7.Interfaz
             ArticuloNegocio negocio = new ArticuloNegocio();
             try
             {
-                dgvArticulos.DataSource = negocio.listar();
-                pbxArticulo.Load(listaImagen[0].ImagenUrl);
-                dgvArticulos.Columns["ImagenUrl"].Visible = false;
+                articulos = negocio.ListarArticulos();
+                dgvArticulos.DataSource = articulos;
+
+                if (dgvArticulos.Columns["Imagenes"] != null)
+                    dgvArticulos.Columns["Imagenes"].Visible = false;
 
             }
             catch (Exception ex)
@@ -45,7 +47,7 @@ namespace TPWinForm_equipo_7.Interfaz
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            if(dgvArticulos.SelectedRows.Count == 0)
+            if (dgvArticulos.SelectedRows.Count == 0)
             {
                 MessageBox.Show("Seleccione un articulo.");
                 return;
@@ -98,8 +100,13 @@ namespace TPWinForm_equipo_7.Interfaz
 
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
         {
-           Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            cargarImagen(seleccionado.ImagenUrl);
+            if (dgvArticulos.CurrentRow == null) return;
+
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            if (seleccionado == null) return;
+
+            if (seleccionado.Imagenes != null && seleccionado.Imagenes.Count > 0)
+                cargarImagen(seleccionado.Imagenes[0].ImagenUrl);
         }
 
         private void cargarImagen(string imagen)
@@ -116,3 +123,4 @@ namespace TPWinForm_equipo_7.Interfaz
         }
     }
 }
+

@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\tpwinform_equipo-7\\interfaz\\frmlistadoarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|solutionrelative:tpwinform_equipo-7\\interfaz\\frmlistadoarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BED8741A-2137-44B9-B8C1-955DF09A5B5B}|AccesoDatos\\Datos.csproj|c:\\users\\franc\\onedrive\\desktop\\trabajo winform\\tp-winform-equipo-7\\accesodatos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BED8741A-2137-44B9-B8C1-955DF09A5B5B}|AccesoDatos\\Datos.csproj|solutionrelative:accesodatos\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3C51218-08AF-445D-B55D-71268504AB84}|Negocio\\Negocio.csproj|C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3C51218-08AF-445D-B55D-71268504AB84}|Negocio\\Negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455FBDFF-E5A8-4558-9029-C9B2C0D4F6B1}|Dominio\\Dominio.csproj|C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\dominio\\imagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{455FBDFF-E5A8-4558-9029-C9B2C0D4F6B1}|Dominio\\Dominio.csproj|solutionrelative:dominio\\imagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|c:\\users\\franc\\onedrive\\desktop\\trabajo winform\\tp-winform-equipo-7\\tpwinform_equipo-7\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|solutionrelative:tpwinform_equipo-7\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\tpwinform_equipo-7\\interfaz\\frmaltaarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|solutionrelative:tpwinform_equipo-7\\interfaz\\frmaltaarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3C51218-08AF-445D-B55D-71268504AB84}|Negocio\\Negocio.csproj|c:\\users\\franc\\onedrive\\desktop\\trabajo winform\\tp-winform-equipo-7\\negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3C51218-08AF-445D-B55D-71268504AB84}|Negocio\\Negocio.csproj|solutionrelative:negocio\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|c:\\users\\franc\\onedrive\\desktop\\trabajo winform\\tp-winform-equipo-7\\tpwinform_equipo-7\\interfaz\\frmlistadoarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|solutionrelative:tpwinform_equipo-7\\interfaz\\frmlistadoarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\tpwinform_equipo-7\\interfaz\\frmlistadoarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -27,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|solutionrelative:tpwinform_equipo-7\\interfaz\\frmaltaarticulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|c:\\users\\franc\\onedrive\\desktop\\trabajo winform\\tp-winform-equipo-7\\tpwinform_equipo-7\\interfaz\\frmaltaarticulo.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "AbsoluteMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\tpwinform_equipo-7\\interfaz\\frmaltaarticulo.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|solutionrelative:tpwinform_equipo-7\\interfaz\\frmaltaarticulo.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
@@ -35,19 +43,15 @@
       "RelativeMoniker": "D:0:0:{BB947379-0F38-41DC-B05E-961FC881454D}|TPWinForm_equipo-7\\TPWinForm_equipo-7.csproj|solutionrelative:tpwinform_equipo-7\\interfaz\\frmaltaarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{455FBDFF-E5A8-4558-9029-C9B2C0D4F6B1}|Dominio\\Dominio.csproj|c:\\users\\franc\\onedrive\\desktop\\trabajo winform\\tp-winform-equipo-7\\dominio\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{455FBDFF-E5A8-4558-9029-C9B2C0D4F6B1}|Dominio\\Dominio.csproj|C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\dominio\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{455FBDFF-E5A8-4558-9029-C9B2C0D4F6B1}|Dominio\\Dominio.csproj|solutionrelative:dominio\\marca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{455FBDFF-E5A8-4558-9029-C9B2C0D4F6B1}|Dominio\\Dominio.csproj|c:\\users\\franc\\onedrive\\desktop\\trabajo winform\\tp-winform-equipo-7\\dominio\\imagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{455FBDFF-E5A8-4558-9029-C9B2C0D4F6B1}|Dominio\\Dominio.csproj|solutionrelative:dominio\\imagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{455FBDFF-E5A8-4558-9029-C9B2C0D4F6B1}|Dominio\\Dominio.csproj|c:\\users\\franc\\onedrive\\desktop\\trabajo winform\\tp-winform-equipo-7\\dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{455FBDFF-E5A8-4558-9029-C9B2C0D4F6B1}|Dominio\\Dominio.csproj|C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{455FBDFF-E5A8-4558-9029-C9B2C0D4F6B1}|Dominio\\Dominio.csproj|solutionrelative:dominio\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{455FBDFF-E5A8-4558-9029-C9B2C0D4F6B1}|Dominio\\Dominio.csproj|c:\\users\\franc\\onedrive\\desktop\\trabajo winform\\tp-winform-equipo-7\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{455FBDFF-E5A8-4558-9029-C9B2C0D4F6B1}|Dominio\\Dominio.csproj|C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{455FBDFF-E5A8-4558-9029-C9B2C0D4F6B1}|Dominio\\Dominio.csproj|solutionrelative:dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -66,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +78,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccesoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\AccesoDatos\\AccesoDatos.cs",
+              "RelativeDocumentMoniker": "AccesoDatos\\AccesoDatos.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\AccesoDatos\\AccesoDatos.cs",
+              "RelativeToolTip": "AccesoDatos\\AccesoDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAOBiwAgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T19:05:16.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArticuloNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\Negocio\\ArticuloNegocio.cs",
+              "RelativeDocumentMoniker": "Negocio\\ArticuloNegocio.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\Negocio\\ArticuloNegocio.cs",
+              "RelativeToolTip": "Negocio\\ArticuloNegocio.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAArwJsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T18:07:21.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmListadoArticulos.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs",
+              "RelativeDocumentMoniker": "TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs*",
+              "RelativeToolTip": "TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs*",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAiwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T23:14:43.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Imagen.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\Dominio\\Imagen.cs",
+              "RelativeDocumentMoniker": "Dominio\\Imagen.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\Dominio\\Imagen.cs",
+              "RelativeToolTip": "Dominio\\Imagen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-16T18:02:40.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\App.config",
               "RelativeDocumentMoniker": "TPWinForm_equipo-7\\App.config",
@@ -87,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "frmAltaArticulo.cs",
               "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.cs",
               "RelativeDocumentMoniker": "TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.cs",
@@ -95,50 +151,23 @@
               "RelativeToolTip": "TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAMwA8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T21:55:16.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T21:55:16.556Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ArticuloNegocio.cs",
-              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\Negocio\\ArticuloNegocio.cs",
-              "RelativeDocumentMoniker": "Negocio\\ArticuloNegocio.cs",
-              "ToolTip": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\Negocio\\ArticuloNegocio.cs",
-              "RelativeToolTip": "Negocio\\ArticuloNegocio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T18:07:21.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmListadoArticulos.cs",
-              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs",
-              "RelativeDocumentMoniker": "TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs",
-              "ToolTip": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs",
-              "RelativeToolTip": "TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAMwA4AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T23:14:43.945Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "frmListadoArticulos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs",
               "RelativeDocumentMoniker": "TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs",
-              "ToolTip": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-13T23:08:57.528Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "frmAltaArticulo.Designer.cs",
               "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.Designer.cs",
               "RelativeDocumentMoniker": "TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.Designer.cs",
@@ -146,36 +175,33 @@
               "RelativeToolTip": "TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.Designer.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T22:21:57.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-13T22:21:57.737Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "frmAltaArticulo.resx",
               "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.resx",
               "RelativeDocumentMoniker": "TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.resx",
               "ToolTip": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.resx",
               "RelativeToolTip": "TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-09-16T18:05:47.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-16T18:05:47.015Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "frmAltaArticulo.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.cs",
               "RelativeDocumentMoniker": "TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.cs",
               "ToolTip": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.cs [Dise\u00F1o]",
               "RelativeToolTip": "TPWinForm_equipo-7\\Interfaz\\frmAltaArticulo.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T21:54:19.297Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-09-13T21:54:19.297Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Marca.cs",
               "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\Dominio\\Marca.cs",
               "RelativeDocumentMoniker": "Dominio\\Marca.cs",
@@ -183,25 +209,11 @@
               "RelativeToolTip": "Dominio\\Marca.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T18:02:53.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-16T18:02:53.31Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Imagen.cs",
-              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\Dominio\\Imagen.cs",
-              "RelativeDocumentMoniker": "Dominio\\Imagen.cs",
-              "ToolTip": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\Dominio\\Imagen.cs",
-              "RelativeToolTip": "Dominio\\Imagen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T18:02:40.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Categoria.cs",
               "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\Dominio\\Categoria.cs",
               "RelativeDocumentMoniker": "Dominio\\Categoria.cs",
@@ -209,12 +221,11 @@
               "RelativeToolTip": "Dominio\\Categoria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T18:02:26.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-16T18:02:26.246Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Articulo.cs",
               "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\Dominio\\Articulo.cs",
               "RelativeDocumentMoniker": "Dominio\\Articulo.cs",
@@ -222,12 +233,11 @@
               "RelativeToolTip": "Dominio\\Articulo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T18:02:02.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-16T18:02:02.49Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "frmListadoArticulos.resx",
               "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.resx",
               "RelativeDocumentMoniker": "TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.resx",
@@ -239,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "frmListadoArticulos.Designer.cs",
               "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Desktop\\Trabajo WinForm\\tp-winform-equipo-7\\TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.Designer.cs",
               "RelativeDocumentMoniker": "TPWinForm_equipo-7\\Interfaz\\frmListadoArticulos.Designer.cs",
