@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TPWinForm_equipo_7.Modelos
+namespace Dominio
 {
-    public class Categoria
+    public class Marca
     {
         public int Id { get; set; }
         public string Descripcion { get; set; }
 
-        public Categoria() { }
+        public Marca() { }
 
-        public Categoria(int id, string descripcion)
+        public Marca(int id, string descripcion)
         {
             Id = id;
             Descripcion = descripcion;

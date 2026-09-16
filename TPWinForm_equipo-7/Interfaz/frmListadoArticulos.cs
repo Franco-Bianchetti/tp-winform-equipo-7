@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TPWinForm_equipo_7.Modelos;
+using Negocio;
+using Dominio;
 
 namespace TPWinForm_equipo_7.Interfaz
 {
     public partial class frmListadoArticulos : Form
     {
+        private List<Imagen> listaImagen;
         private List<Articulo> articulos = new List<Articulo>();
         public frmListadoArticulos()
         {
@@ -25,6 +27,9 @@ namespace TPWinForm_equipo_7.Interfaz
             try
             {
                 dgvArticulos.DataSource = negocio.listar();
+                pbxArticulo.Load(listaImagen[0].ImagenUrl);
+                dgvArticulos.Columns["ImagenUrl"].Visible = false;
+
             }
             catch (Exception ex)
             {
@@ -89,6 +94,25 @@ namespace TPWinForm_equipo_7.Interfaz
             // frmDetalleArticulo todavía no existe - lo armamos en el próximo paso
             // frmDetalleArticulo frm = new frmDetalleArticulo(seleccionado);
             // frm.ShowDialog();
+        }
+
+        private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
+        {
+           Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            cargarImagen(seleccionado.ImagenUrl);
+        }
+
+        private void cargarImagen(string imagen)
+        {
+            try
+            {
+                pbxArticulo.Load(imagen);
+            }
+            catch (Exception ex)
+            {
+                pbxArticulo.Load("https://st2.depositphotos.com/2586633/46477/v/950/depositphotos_464771766-stock-illustration-no-photo-or-blank-image.jpg");
+                throw;
+            }
         }
     }
 }

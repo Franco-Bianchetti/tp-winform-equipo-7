@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TPWinForm_equipo_7.Modelos;
+using Negocio;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Dominio;
 
 namespace TPWinForm_equipo_7.Interfaz
 {
