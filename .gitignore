@@ -1,0 +1,16 @@
+# Visual Studio
+.vs/
+
+# Build
+bin/
+obj/
+
+# Usuario
+*.user
+*.suo
+
+# Debug
+*.exe
+*.dll
+**pdb
+*.cache
