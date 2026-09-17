@@ -95,12 +95,14 @@ namespace TPWinForm_equipo_7.Interfaz
         }
 
         private void lstImagenes_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (lstImagenes.SelectedItem == null) return;
+{
+    if (lstImagenes.SelectedItem == null)
+        return;
 
-            string ruta0Url = lstImagenes.SelectedItem.ToString();
-            cargarImagen(ruta0Url);
-        }
+    string url = lstImagenes.SelectedItem.ToString();
+
+    cargarImagen(url);
+}
 
         private void btnQuitarImagen_Click(object sender, EventArgs e)
         {
