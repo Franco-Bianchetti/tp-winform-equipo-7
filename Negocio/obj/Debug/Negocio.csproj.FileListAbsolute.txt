@@ -9,3 +9,14 @@ C:\Users\franc\OneDrive\Desktop\Trabajo WinForm\tp-winform-equipo-7\Negocio\bin\
 C:\Users\franc\OneDrive\Desktop\Trabajo WinForm\tp-winform-equipo-7\Negocio\obj\Debug\Negocio.csproj.Up2Date
 C:\Users\franc\OneDrive\Desktop\Trabajo WinForm\tp-winform-equipo-7\Negocio\obj\Debug\Negocio.dll
 C:\Users\franc\OneDrive\Desktop\Trabajo WinForm\tp-winform-equipo-7\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Negocio\bin\Debug\Negocio.dll
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Negocio\bin\Debug\AccesoDatos.dll
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Negocio\bin\Debug\Dominio.dll
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Negocio\bin\Debug\AccesoDatos.pdb
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Negocio\bin\Debug\Dominio.pdb
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Negocio\obj\Debug\Negocio.csproj.Up2Date
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Negocio\obj\Debug\Negocio.dll
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Negocio\obj\Debug\Negocio.pdb

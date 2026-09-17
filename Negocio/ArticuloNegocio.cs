@@ -17,7 +17,28 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("select A.Id, A.Codigo, A.Nombre, A.Descripcion, A.IdMarca, A.IdCategoria, A.Precio, M.Descripcion Marca, C.Descripcion Categoria, I.ImagenUrl, I.Id IdImagen, I.IdArticulo from ARTICULOS A, MARCAS M, CATEGORIAS C left join IMAGENES I on I.IdArticulo = A.Id where C.Id = A.IdCategoria and M.Id = A.IdMarca");
+                datos.setearConsulta(
+                            @"SELECT
+                                A.Id,
+                                A.Codigo,
+                                A.Nombre,
+                                A.Descripcion,
+                                A.IdMarca,
+                                A.IdCategoria,
+                                A.Precio,
+                                M.Descripcion AS Marca,
+                                C.Descripcion AS Categoria,
+                                I.ImagenUrl,
+                                I.Id AS IdImagen,
+                                I.IdArticulo
+                            FROM ARTICULOS A
+                            INNER JOIN MARCAS M
+                                ON M.Id = A.IdMarca
+                            INNER JOIN CATEGORIAS C
+                                ON C.Id = A.IdCategoria
+                            LEFT JOIN IMAGENES I
+                                ON I.IdArticulo = A.Id"
+                            );
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())

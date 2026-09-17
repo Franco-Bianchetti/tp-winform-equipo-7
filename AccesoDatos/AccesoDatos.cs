@@ -17,7 +17,9 @@ namespace Datos
 
         public AccesoDatos()
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["CatalogoDB"].ConnectionString;
+            string connectionString =
+                ConfigurationManager.ConnectionStrings["CatalogoDB"].ConnectionString;
+
             conexion = new SqlConnection(connectionString);
             comando = new SqlCommand();
         }
@@ -37,6 +39,7 @@ namespace Datos
         public void ejecutarLectura()
         {
             comando.Connection = conexion;
+
             try
             {
                 conexion.Open();
@@ -52,6 +55,7 @@ namespace Datos
         public void ejecutarAccion()
         {
             comando.Connection = conexion;
+
             try
             {
                 conexion.Open();
@@ -67,17 +71,10 @@ namespace Datos
             }
         }
 
-        public void cerrarConexion()
-        {
-            if (lector != null)
-                lector.Close();
-            if (conexion.State == System.Data.ConnectionState.Open)
-                conexion.Close();
-        }
-
         public int ejecutarScalar()
         {
             comando.Connection = conexion;
+
             try
             {
                 conexion.Open();
@@ -87,6 +84,19 @@ namespace Datos
             {
                 throw ex;
             }
+            finally
+            {
+                conexion.Close();
+            }
+        }
+
+        public void cerrarConexion()
+        {
+            if (lector != null)
+                lector.Close();
+
+            if (conexion.State == System.Data.ConnectionState.Open)
+                conexion.Close();
         }
     }
 }

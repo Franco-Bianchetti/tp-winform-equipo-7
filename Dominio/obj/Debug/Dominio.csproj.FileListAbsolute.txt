@@ -4,3 +4,9 @@ C:\Users\franc\OneDrive\Desktop\Trabajo WinForm\tp-winform-equipo-7\Dominio\obj\
 C:\Users\franc\OneDrive\Desktop\Trabajo WinForm\tp-winform-equipo-7\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\franc\OneDrive\Desktop\Trabajo WinForm\tp-winform-equipo-7\Dominio\obj\Debug\Dominio.dll
 C:\Users\franc\OneDrive\Desktop\Trabajo WinForm\tp-winform-equipo-7\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Dominio\bin\Debug\Dominio.dll
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Dominio\obj\Debug\Dominio.dll
+C:\Users\Xelere\Desktop\Repo Github - Prog 3\tp-winform-equipo-7\Dominio\obj\Debug\Dominio.pdb

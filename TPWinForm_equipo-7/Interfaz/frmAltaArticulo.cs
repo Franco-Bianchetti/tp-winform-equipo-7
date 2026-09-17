@@ -11,6 +11,7 @@ using Negocio;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Dominio;
 
+
 namespace TPWinForm_equipo_7.Interfaz
 {
     public partial class frmAltaArticulo : Form
@@ -106,6 +107,45 @@ namespace TPWinForm_equipo_7.Interfaz
             if (lstImagenes.SelectedIndex < 0) return;
             lstImagenes.Items.RemoveAt(lstImagenes.SelectedIndex);
             picImagen.Image = null;
+        }
+
+        private void frmAltaArticulo_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                MarcaNegocio marcaNegocio = new MarcaNegocio();
+                CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+
+                cboMarca.DataSource = marcaNegocio.listar();
+                cboMarca.DisplayMember = "Descripcion";
+                cboMarca.ValueMember = "Id";
+
+                cboCategoria.DataSource = categoriaNegocio.listar();
+                cboCategoria.DisplayMember = "Descripcion";
+                cboCategoria.ValueMember = "Id";
+
+                if (articulo != null)
+                {
+                    txtCodigo.Text = articulo.Codigo;
+                    txtNombre.Text = articulo.Nombre;
+                    txtDescripcion.Text = articulo.Descripcion;
+                    txtPrecio.Text = articulo.Precio.ToString();
+
+                    cboMarca.SelectedValue = articulo.Marca.Id;
+                    cboCategoria.SelectedValue = articulo.Categoria.Id;
+
+                    lstImagenes.Items.Clear();
+
+                    foreach (Imagen img in articulo.Imagenes)
+                    {
+                        lstImagenes.Items.Add(img.ImagenUrl);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
