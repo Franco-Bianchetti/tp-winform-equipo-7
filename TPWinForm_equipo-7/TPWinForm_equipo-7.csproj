@@ -54,19 +54,37 @@
     <Compile Include="Interfaz\frmAltaArticulo.Designer.cs">
       <DependentUpon>frmAltaArticulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\frmAltaMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\frmAltaMarca.Designer.cs">
+      <DependentUpon>frmAltaMarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaz\frmListadoArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaz\frmListadoArticulos.Designer.cs">
       <DependentUpon>frmListadoArticulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\frmListadoMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\frmListadoMarcas.Designer.cs">
+      <DependentUpon>frmListadoMarcas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Interfaz\frmAltaArticulo.resx">
       <DependentUpon>frmAltaArticulo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\frmAltaMarca.resx">
+      <DependentUpon>frmAltaMarca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\frmListadoArticulos.resx">
       <DependentUpon>frmListadoArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\frmListadoMarcas.resx">
+      <DependentUpon>frmListadoMarcas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
