@@ -54,11 +54,19 @@
     <Compile Include="Interfaz\frmAltaArticulo.Designer.cs">
       <DependentUpon>frmAltaArticulo.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Interfaz\frmAltaCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaz\frmAltaCategoria.Designer.cs">
       <DependentUpon>frmAltaCategoria.cs</DependentUpon>
+=======
+    <Compile Include="Interfaz\frmAltaMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\frmAltaMarca.Designer.cs">
+      <DependentUpon>frmAltaMarca.cs</DependentUpon>
+>>>>>>> cb7980532115620e17ddcb2ebf80d5d0bfd765d8
     </Compile>
     <Compile Include="Interfaz\frmListadoArticulos.cs">
       <SubType>Form</SubType>
@@ -66,16 +74,30 @@
     <Compile Include="Interfaz\frmListadoArticulos.Designer.cs">
       <DependentUpon>frmListadoArticulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\frmListadoMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\frmListadoMarcas.Designer.cs">
+      <DependentUpon>frmListadoMarcas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Interfaz\frmAltaArticulo.resx">
       <DependentUpon>frmAltaArticulo.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Interfaz\frmAltaCategoria.resx">
       <DependentUpon>frmAltaCategoria.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Interfaz\frmAltaMarca.resx">
+      <DependentUpon>frmAltaMarca.cs</DependentUpon>
+>>>>>>> cb7980532115620e17ddcb2ebf80d5d0bfd765d8
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\frmListadoArticulos.resx">
       <DependentUpon>frmListadoArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\frmListadoMarcas.resx">
+      <DependentUpon>frmListadoMarcas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
