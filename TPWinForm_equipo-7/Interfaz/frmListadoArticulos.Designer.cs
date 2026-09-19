@@ -44,6 +44,8 @@
             this.lblFiltroavanzado = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.brnBuscar = new System.Windows.Forms.Button();
+            this.btnAnterior = new System.Windows.Forms.Button();
+            this.btnSiguiente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).BeginInit();
             this.SuspendLayout();
@@ -210,12 +212,34 @@
             this.brnBuscar.UseVisualStyleBackColor = true;
             this.brnBuscar.Click += new System.EventHandler(this.brnBuscar_Click);
             // 
+            // btnAnterior
+            // 
+            this.btnAnterior.Location = new System.Drawing.Point(779, 355);
+            this.btnAnterior.Name = "btnAnterior";
+            this.btnAnterior.Size = new System.Drawing.Size(37, 23);
+            this.btnAnterior.TabIndex = 18;
+            this.btnAnterior.Text = "<";
+            this.btnAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click);
+            // 
+            // btnSiguiente
+            // 
+            this.btnSiguiente.Location = new System.Drawing.Point(899, 355);
+            this.btnSiguiente.Name = "btnSiguiente";
+            this.btnSiguiente.Size = new System.Drawing.Size(39, 23);
+            this.btnSiguiente.TabIndex = 19;
+            this.btnSiguiente.Text = ">";
+            this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click_1);
+            // 
             // frmListadoArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(950, 514);
+            this.Controls.Add(this.btnSiguiente);
+            this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.brnBuscar);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lblFiltroavanzado);
@@ -263,5 +287,7 @@
         private System.Windows.Forms.Label lblFiltroavanzado;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button brnBuscar;
+        private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.Button btnSiguiente;
     }
 }

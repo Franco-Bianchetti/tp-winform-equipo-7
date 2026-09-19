@@ -110,6 +110,12 @@ namespace TPWinForm_equipo_7.Interfaz
         {
             try
             {
+                if (string.IsNullOrWhiteSpace(imagen))
+                {
+                    picImagen.Image = null;
+                    return;
+                }
+
                 picImagen.Load(imagen);
             }
             catch
@@ -120,16 +126,33 @@ namespace TPWinForm_equipo_7.Interfaz
 
         private void btnAgregarImagen_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Entró al botón");
-
             if (string.IsNullOrWhiteSpace(txtUrlImagen.Text))
             {
                 MessageBox.Show("Ingrese una URL.");
                 return;
             }
 
-            lstImagenes.Items.Add(txtUrlImagen.Text);
-            lstImagenes.SelectedItem = txtUrlImagen.Text;
+            string url = txtUrlImagen.Text.Trim();
+
+            if (!Uri.IsWellFormedUriString(url, UriKind.Absolute))
+            {
+                MessageBox.Show("La URL ingresada no es válida.");
+                return;
+            }
+
+            string urlLower = url.ToLower();
+
+            if (!(urlLower.Contains(".jpg") ||
+                  urlLower.Contains(".jpeg") ||
+                  urlLower.Contains(".png") ||
+                  urlLower.Contains(".webp")))
+            {
+                MessageBox.Show("La URL debe apuntar a una imagen (.jpg, .jpeg, .png o .webp).");
+                return;
+            }
+
+            lstImagenes.Items.Add(url);
+            lstImagenes.SelectedItem = url;
 
             txtUrlImagen.Clear();
         }
@@ -165,6 +188,9 @@ namespace TPWinForm_equipo_7.Interfaz
                 cboCategoria.DisplayMember = "Descripcion";
                 cboCategoria.ValueMember = "Id";
 
+                cboMarca.SelectedIndex = -1;
+                cboCategoria.SelectedIndex = -1;
+
                 if (articulo != null)
                 {
                     txtCodigo.Text = articulo.Codigo;
@@ -187,6 +213,13 @@ namespace TPWinForm_equipo_7.Interfaz
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtUrlImagen.Clear();
+            picImagen.Image = null;
+            txtUrlImagen.Focus();
         }
     }
 }

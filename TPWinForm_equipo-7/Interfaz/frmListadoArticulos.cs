@@ -43,9 +43,7 @@ namespace TPWinForm_equipo_7.Interfaz
             dgvArticulos.DataSource = null;
             dgvArticulos.DataSource = listaFiltrada;
 
-            if (dgvArticulos.Columns["Imagenes"] != null)
-                dgvArticulos.Columns["Imagenes"].Visible = false;
-
+            configurarGrilla();
             actualizarVisor();
         }
         private void actualizarVisor()
@@ -76,13 +74,15 @@ namespace TPWinForm_equipo_7.Interfaz
         private void cargar()
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
+
             try
             {
                 articulos = negocio.ListarArticulos();
+
+                dgvArticulos.DataSource = null;
                 dgvArticulos.DataSource = articulos;
 
-                if (dgvArticulos.Columns["Imagenes"] != null)
-                    dgvArticulos.Columns["Imagenes"].Visible = false;
+                configurarGrilla();
 
                 actualizarVisor();
             }
@@ -292,8 +292,7 @@ namespace TPWinForm_equipo_7.Interfaz
 
                 dgvArticulos.DataSource = negocio.filtrar(campo, criterio, filtro);
 
-                if (dgvArticulos.Columns["Imagenes"] != null)
-                    dgvArticulos.Columns["Imagenes"].Visible = false;
+                configurarGrilla();
 
                 actualizarVisor();
             }
@@ -315,6 +314,50 @@ namespace TPWinForm_equipo_7.Interfaz
         private void lblcriterio_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void configurarGrilla()
+        {
+            if (dgvArticulos.Columns["Id"] != null)
+                dgvArticulos.Columns["Id"].Visible = false;
+
+            if (dgvArticulos.Columns["Descripcion"] != null)
+                dgvArticulos.Columns["Descripcion"].Visible = false;
+
+            if (dgvArticulos.Columns["Categoria"] != null)
+                dgvArticulos.Columns["Categoria"].Visible = false;
+
+            if (dgvArticulos.Columns["Imagenes"] != null)
+                dgvArticulos.Columns["Imagenes"].Visible = false;
+
+            dgvArticulos.Columns["Codigo"].HeaderText = "Código";
+            dgvArticulos.Columns["Nombre"].HeaderText = "Nombre";
+            dgvArticulos.Columns["Marca"].HeaderText = "Marca";
+            dgvArticulos.Columns["Precio"].HeaderText = "Precio";
+        }
+        private void btnSiguiente_Click_1(object sender, EventArgs e)
+        {
+            if (dgvArticulos.CurrentRow == null)
+                return;
+
+            Articulo seleccionado =
+                (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+            if (seleccionado != null &&
+                seleccionado.Imagenes != null &&
+                seleccionado.Imagenes.Count > 0)
+            {
+                indiceImagen++;
+
+                if (indiceImagen >= seleccionado.Imagenes.Count)
+                    indiceImagen = 0;
+
+                cargarImagen(
+                    seleccionado.Imagenes[indiceImagen].ImagenUrl);
+
+                lblContadorImagen.Text =
+                    $"{indiceImagen + 1} / {seleccionado.Imagenes.Count}";
+            }
         }
     }
 }

@@ -49,6 +49,7 @@
             this.lstImagenes = new System.Windows.Forms.ListBox();
             this.picImagen = new System.Windows.Forms.PictureBox();
             this.btnQuitarImagen = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.grpImagenes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picImagen)).BeginInit();
             this.SuspendLayout();
@@ -187,9 +188,9 @@
             this.btnAgregarImagen.Location = new System.Drawing.Point(236, 36);
             this.btnAgregarImagen.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarImagen.Name = "btnAgregarImagen";
-            this.btnAgregarImagen.Size = new System.Drawing.Size(26, 24);
+            this.btnAgregarImagen.Size = new System.Drawing.Size(66, 24);
             this.btnAgregarImagen.TabIndex = 14;
-            this.btnAgregarImagen.Text = "+";
+            this.btnAgregarImagen.Text = "Agregar";
             this.btnAgregarImagen.UseVisualStyleBackColor = true;
             this.btnAgregarImagen.Click += new System.EventHandler(this.btnAgregarImagen_Click);
             // 
@@ -217,6 +218,7 @@
             // 
             // grpImagenes
             // 
+            this.grpImagenes.Controls.Add(this.btnLimpiar);
             this.grpImagenes.Controls.Add(this.lstImagenes);
             this.grpImagenes.Controls.Add(this.lblImagen);
             this.grpImagenes.Controls.Add(this.txtUrlImagen);
@@ -225,7 +227,7 @@
             this.grpImagenes.Margin = new System.Windows.Forms.Padding(2);
             this.grpImagenes.Name = "grpImagenes";
             this.grpImagenes.Padding = new System.Windows.Forms.Padding(2);
-            this.grpImagenes.Size = new System.Drawing.Size(316, 153);
+            this.grpImagenes.Size = new System.Drawing.Size(386, 153);
             this.grpImagenes.TabIndex = 17;
             this.grpImagenes.TabStop = false;
             this.grpImagenes.Text = "Imagenes (una o mas URLs)";
@@ -236,13 +238,13 @@
             this.lstImagenes.Location = new System.Drawing.Point(7, 61);
             this.lstImagenes.Margin = new System.Windows.Forms.Padding(2);
             this.lstImagenes.Name = "lstImagenes";
-            this.lstImagenes.Size = new System.Drawing.Size(306, 82);
+            this.lstImagenes.Size = new System.Drawing.Size(366, 82);
             this.lstImagenes.TabIndex = 18;
             this.lstImagenes.SelectedIndexChanged += new System.EventHandler(this.lstImagenes_SelectedIndexChanged);
             // 
             // picImagen
             // 
-            this.picImagen.Location = new System.Drawing.Point(384, 44);
+            this.picImagen.Location = new System.Drawing.Point(404, 44);
             this.picImagen.Margin = new System.Windows.Forms.Padding(2);
             this.picImagen.Name = "picImagen";
             this.picImagen.Size = new System.Drawing.Size(195, 316);
@@ -251,7 +253,7 @@
             // 
             // btnQuitarImagen
             // 
-            this.btnQuitarImagen.Location = new System.Drawing.Point(449, 365);
+            this.btnQuitarImagen.Location = new System.Drawing.Point(471, 364);
             this.btnQuitarImagen.Margin = new System.Windows.Forms.Padding(2);
             this.btnQuitarImagen.Name = "btnQuitarImagen";
             this.btnQuitarImagen.Size = new System.Drawing.Size(68, 28);
@@ -259,6 +261,16 @@
             this.btnQuitarImagen.Text = "Quitar";
             this.btnQuitarImagen.UseVisualStyleBackColor = true;
             this.btnQuitarImagen.Click += new System.EventHandler(this.btnQuitarImagen_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(307, 36);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(66, 24);
+            this.btnLimpiar.TabIndex = 20;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // frmAltaArticulo
             // 
@@ -317,5 +329,6 @@
         private System.Windows.Forms.ListBox lstImagenes;
         private System.Windows.Forms.PictureBox picImagen;
         private System.Windows.Forms.Button btnQuitarImagen;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
