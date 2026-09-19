@@ -228,7 +228,7 @@ namespace Negocio
                             break;
                     }
                 }
-                else // Marca
+                else 
                 {
                     switch (criterio)
                     {
