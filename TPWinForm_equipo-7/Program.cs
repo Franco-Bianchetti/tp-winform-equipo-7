@@ -18,7 +18,7 @@ namespace TPWinForm_equipo_7
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmAltaArticulo());
-            Application.Run(new cboCampo());
+            Application.Run(new frmListadoArticulos());
         }
     }
 }

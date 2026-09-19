@@ -22,11 +22,28 @@ namespace TPWinForm_equipo_7.Interfaz
         {
             InitializeComponent();
         }
-        public frmAltaArticulo(Articulo articulo)
+        public frmAltaArticulo(Articulo articulo, bool sololectura = false)
         {
             InitializeComponent();
             this.articulo = articulo;
-            Text = "Modificar Articulo";
+            Text = sololectura ? "Detalle Articulo" : "Modificar Articulo"; 
+            if (sololectura)
+            {
+                bloquearControles();
+            }
+        }
+        private void bloquearControles()
+        {
+            txtCodigo.ReadOnly = true;
+            txtNombre.ReadOnly = true;
+            txtDescripcion.ReadOnly = true;
+            txtPrecio.ReadOnly = true;
+            cboMarca.Enabled = false;
+            cboCategoria.Enabled = false;
+            btnGuardar.Visible = false;
+            btnAgregarImagen.Visible = false;
+            btnQuitarImagen.Visible = false;
+            btnCancelar.Text = "Cerrar";
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -76,7 +93,7 @@ namespace TPWinForm_equipo_7.Interfaz
             {
                 picImagen.Image = Image.FromFile(imagen);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 picImagen.Image = null;
                 MessageBox.Show("No se pudo cargar la imagen");
