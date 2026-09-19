@@ -311,6 +311,11 @@ namespace TPWinForm_equipo_7.Interfaz
         {
 
         }
+
+        private void lblcriterio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
  

@@ -81,45 +81,67 @@ namespace TPWinForm_equipo_7.Interfaz
             articulo.Categoria = (Categoria)cboCategoria.SelectedItem;
 
             articulo.Imagenes.Clear();
-            foreach (var item in lstImagenes.Items)
-                articulo.Imagenes.Add(new Imagen { ImagenUrl = item.ToString() });
 
-            MessageBox.Show("Artículo guardado (en memoria, todavía sin base de datos).");
+            foreach (var item in lstImagenes.Items)
+            {
+                articulo.Imagenes.Add(
+                    new Imagen
+                    {
+                        ImagenUrl = item.ToString()
+                    });
+            }
+
+            ArticuloNegocio negocio = new ArticuloNegocio();
+
+            if (articulo.Id == 0)
+            {
+                negocio.Agregar(articulo);
+                MessageBox.Show("Artículo agregado correctamente.");
+            }
+            else
+            {
+                negocio.Modificar(articulo);
+                MessageBox.Show("Artículo modificado correctamente.");
+            }
+
             Close();
         }
         private void cargarImagen(string imagen)
         {
             try
             {
-                picImagen.Image = Image.FromFile(imagen);
+                picImagen.Load(imagen);
             }
-            catch (Exception)
+            catch
             {
                 picImagen.Image = null;
-                MessageBox.Show("No se pudo cargar la imagen");
-            } 
+            }
         }
 
         private void btnAgregarImagen_Click(object sender, EventArgs e)
         {
-            archivo = new OpenFileDialog();
-            archivo.Filter = "jpg|*.jpg;|png|*.png";
-            if(archivo.ShowDialog() == DialogResult.OK)
+            MessageBox.Show("Entró al botón");
+
+            if (string.IsNullOrWhiteSpace(txtUrlImagen.Text))
             {
-                lstImagenes.Items.Add(archivo.FileName);
-                lstImagenes.SelectedItem = archivo.FileName;
+                MessageBox.Show("Ingrese una URL.");
+                return;
             }
+
+            lstImagenes.Items.Add(txtUrlImagen.Text);
+            lstImagenes.SelectedItem = txtUrlImagen.Text;
+
+            txtUrlImagen.Clear();
         }
 
         private void lstImagenes_SelectedIndexChanged(object sender, EventArgs e)
-{
-    if (lstImagenes.SelectedItem == null)
-        return;
+         {
+             if (lstImagenes.SelectedItem == null)return;
 
-    string url = lstImagenes.SelectedItem.ToString();
-
-    cargarImagen(url);
-}
+            string url = lstImagenes.SelectedItem.ToString();
+    
+            cargarImagen(url);
+         }
 
         private void btnQuitarImagen_Click(object sender, EventArgs e)
         {

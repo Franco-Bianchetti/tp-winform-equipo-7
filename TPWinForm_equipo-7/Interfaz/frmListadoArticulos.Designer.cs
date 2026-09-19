@@ -35,8 +35,6 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnDetalle = new System.Windows.Forms.Button();
             this.lblContadorImagen = new System.Windows.Forms.Label();
-            this.btnAnterior = new System.Windows.Forms.Button();
-            this.btnSiguiente = new System.Windows.Forms.Button();
             this.lblFiltro = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblcriterio = new System.Windows.Forms.Label();
@@ -60,14 +58,14 @@
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.RowHeadersWidth = 51;
             this.dgvArticulos.RowTemplate.Height = 24;
-            this.dgvArticulos.Size = new System.Drawing.Size(385, 239);
+            this.dgvArticulos.Size = new System.Drawing.Size(749, 239);
             this.dgvArticulos.TabIndex = 0;
             this.dgvArticulos.SelectionChanged += new System.EventHandler(this.dgvArticulos_SelectionChanged);
             // 
             // pbxArticulo
             // 
             this.pbxArticulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pbxArticulo.Location = new System.Drawing.Point(404, 99);
+            this.pbxArticulo.Location = new System.Drawing.Point(779, 99);
             this.pbxArticulo.Margin = new System.Windows.Forms.Padding(2);
             this.pbxArticulo.Name = "pbxArticulo";
             this.pbxArticulo.Size = new System.Drawing.Size(160, 239);
@@ -123,34 +121,12 @@
             // 
             this.lblContadorImagen.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblContadorImagen.AutoSize = true;
-            this.lblContadorImagen.Location = new System.Drawing.Point(472, 340);
+            this.lblContadorImagen.Location = new System.Drawing.Point(847, 340);
             this.lblContadorImagen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblContadorImagen.Name = "lblContadorImagen";
             this.lblContadorImagen.Size = new System.Drawing.Size(24, 13);
             this.lblContadorImagen.TabIndex = 6;
             this.lblContadorImagen.Text = "1/1";
-            // 
-            // btnAnterior
-            // 
-            this.btnAnterior.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnAnterior.Location = new System.Drawing.Point(404, 355);
-            this.btnAnterior.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAnterior.Name = "btnAnterior";
-            this.btnAnterior.Size = new System.Drawing.Size(30, 19);
-            this.btnAnterior.TabIndex = 7;
-            this.btnAnterior.Text = "<";
-            this.btnAnterior.UseVisualStyleBackColor = true;
-            // 
-            // btnSiguiente
-            // 
-            this.btnSiguiente.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnSiguiente.Location = new System.Drawing.Point(534, 359);
-            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(30, 19);
-            this.btnSiguiente.TabIndex = 8;
-            this.btnSiguiente.Text = ">";
-            this.btnSiguiente.UseVisualStyleBackColor = true;
             // 
             // lblFiltro
             // 
@@ -173,16 +149,17 @@
             // lblcriterio
             // 
             this.lblcriterio.AutoSize = true;
-            this.lblcriterio.Location = new System.Drawing.Point(328, 420);
+            this.lblcriterio.Location = new System.Drawing.Point(485, 419);
             this.lblcriterio.Name = "lblcriterio";
             this.lblcriterio.Size = new System.Drawing.Size(42, 13);
             this.lblcriterio.TabIndex = 11;
             this.lblcriterio.Text = "Criterio:";
+            this.lblcriterio.Click += new System.EventHandler(this.lblcriterio_Click);
             // 
             // lblcapo
             // 
             this.lblcapo.AutoSize = true;
-            this.lblcapo.Location = new System.Drawing.Point(191, 420);
+            this.lblcapo.Location = new System.Drawing.Point(356, 419);
             this.lblcapo.Name = "lblcapo";
             this.lblcapo.Size = new System.Drawing.Size(43, 13);
             this.lblcapo.TabIndex = 12;
@@ -191,7 +168,7 @@
             // cboCampo
             // 
             this.cboCampo.FormattingEnabled = true;
-            this.cboCampo.Location = new System.Drawing.Point(141, 436);
+            this.cboCampo.Location = new System.Drawing.Point(306, 435);
             this.cboCampo.Name = "cboCampo";
             this.cboCampo.Size = new System.Drawing.Size(121, 21);
             this.cboCampo.TabIndex = 13;
@@ -200,7 +177,7 @@
             // cboCriterio
             // 
             this.cboCriterio.FormattingEnabled = true;
-            this.cboCriterio.Location = new System.Drawing.Point(280, 436);
+            this.cboCriterio.Location = new System.Drawing.Point(445, 435);
             this.cboCriterio.Name = "cboCriterio";
             this.cboCriterio.Size = new System.Drawing.Size(121, 21);
             this.cboCriterio.TabIndex = 14;
@@ -209,7 +186,7 @@
             // lblFiltroavanzado
             // 
             this.lblFiltroavanzado.AutoSize = true;
-            this.lblFiltroavanzado.Location = new System.Drawing.Point(413, 420);
+            this.lblFiltroavanzado.Location = new System.Drawing.Point(588, 419);
             this.lblFiltroavanzado.Name = "lblFiltroavanzado";
             this.lblFiltroavanzado.Size = new System.Drawing.Size(83, 13);
             this.lblFiltroavanzado.TabIndex = 15;
@@ -217,15 +194,15 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(407, 436);
+            this.textBox2.Location = new System.Drawing.Point(572, 435);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(121, 20);
             this.textBox2.TabIndex = 16;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // brnBuscar
             // 
-            this.brnBuscar.Location = new System.Drawing.Point(314, 462);
+            this.brnBuscar.Location = new System.Drawing.Point(479, 461);
             this.brnBuscar.Name = "brnBuscar";
             this.brnBuscar.Size = new System.Drawing.Size(75, 23);
             this.brnBuscar.TabIndex = 17;
@@ -248,8 +225,6 @@
             this.Controls.Add(this.lblcriterio);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblFiltro);
-            this.Controls.Add(this.btnSiguiente);
-            this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.lblContadorImagen);
             this.Controls.Add(this.btnDetalle);
             this.Controls.Add(this.btnEliminar);
@@ -279,8 +254,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnDetalle;
         private System.Windows.Forms.Label lblContadorImagen;
-        private System.Windows.Forms.Button btnAnterior;
-        private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Label lblFiltro;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblcriterio;

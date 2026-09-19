@@ -118,6 +118,15 @@ namespace Negocio
 
                 articulo.Id = Convert.ToInt32(datos.ejecutarScalar());
 
+                ImagenNegocio imgNegocio = new ImagenNegocio();
+
+                foreach (Imagen img in articulo.Imagenes)
+                {
+                    img.IdArticulo = articulo.Id;
+
+                    imgNegocio.agregar(img);
+                }
+
                 datos.cerrarConexion();
 
 
@@ -147,6 +156,15 @@ namespace Negocio
                 datos.setearParametro("@Precio", articulo.Precio);
                 datos.setearParametro("@Id", articulo.Id);
                 datos.ejecutarAccion();
+                ImagenNegocio imgNegocio = new ImagenNegocio();
+
+                imgNegocio.eliminarPorArticulo(articulo.Id);
+
+                foreach (Imagen img in articulo.Imagenes)
+                {
+                    img.IdArticulo = articulo.Id;
+                    imgNegocio.agregar(img);
+                }
             }
             catch (Exception ex)
             {
