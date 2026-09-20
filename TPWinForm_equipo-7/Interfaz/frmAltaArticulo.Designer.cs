@@ -111,7 +111,7 @@
             this.lblImagen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblImagen.Name = "lblImagen";
             this.lblImagen.Size = new System.Drawing.Size(70, 13);
-            this.lblImagen.TabIndex = 5;
+            this.lblImagen.TabIndex = 0;
             this.lblImagen.Text = "URL Imagen:";
             // 
             // lblPrecio
@@ -121,7 +121,7 @@
             this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(43, 13);
-            this.lblPrecio.TabIndex = 6;
+            this.lblPrecio.TabIndex = 5;
             this.lblPrecio.Text = "Precio: ";
             // 
             // txtCodigo
@@ -130,7 +130,7 @@
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(122, 20);
-            this.txtCodigo.TabIndex = 7;
+            this.txtCodigo.TabIndex = 6;
             // 
             // txtNombre
             // 
@@ -138,7 +138,7 @@
             this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(122, 20);
-            this.txtNombre.TabIndex = 8;
+            this.txtNombre.TabIndex = 7;
             // 
             // txtDescripcion
             // 
@@ -147,7 +147,7 @@
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(216, 56);
-            this.txtDescripcion.TabIndex = 9;
+            this.txtDescripcion.TabIndex = 8;
             // 
             // cboMarca
             // 
@@ -156,7 +156,7 @@
             this.cboMarca.Margin = new System.Windows.Forms.Padding(2);
             this.cboMarca.Name = "cboMarca";
             this.cboMarca.Size = new System.Drawing.Size(122, 21);
-            this.cboMarca.TabIndex = 10;
+            this.cboMarca.TabIndex = 9;
             // 
             // cboCategoria
             // 
@@ -165,7 +165,7 @@
             this.cboCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(122, 21);
-            this.cboCategoria.TabIndex = 11;
+            this.cboCategoria.TabIndex = 10;
             // 
             // txtUrlImagen
             // 
@@ -173,7 +173,7 @@
             this.txtUrlImagen.Margin = new System.Windows.Forms.Padding(2);
             this.txtUrlImagen.Name = "txtUrlImagen";
             this.txtUrlImagen.Size = new System.Drawing.Size(225, 20);
-            this.txtUrlImagen.TabIndex = 12;
+            this.txtUrlImagen.TabIndex = 1;
             // 
             // txtPrecio
             // 
@@ -181,7 +181,7 @@
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(84, 20);
-            this.txtPrecio.TabIndex = 13;
+            this.txtPrecio.TabIndex = 11;
             // 
             // btnAgregarImagen
             // 
@@ -189,7 +189,7 @@
             this.btnAgregarImagen.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarImagen.Name = "btnAgregarImagen";
             this.btnAgregarImagen.Size = new System.Drawing.Size(66, 24);
-            this.btnAgregarImagen.TabIndex = 14;
+            this.btnAgregarImagen.TabIndex = 2;
             this.btnAgregarImagen.Text = "Agregar";
             this.btnAgregarImagen.UseVisualStyleBackColor = true;
             this.btnAgregarImagen.Click += new System.EventHandler(this.btnAgregarImagen_Click);
@@ -200,7 +200,7 @@
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(68, 28);
-            this.btnGuardar.TabIndex = 15;
+            this.btnGuardar.TabIndex = 14;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -211,7 +211,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(68, 28);
-            this.btnCancelar.TabIndex = 16;
+            this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -228,7 +228,7 @@
             this.grpImagenes.Name = "grpImagenes";
             this.grpImagenes.Padding = new System.Windows.Forms.Padding(2);
             this.grpImagenes.Size = new System.Drawing.Size(386, 153);
-            this.grpImagenes.TabIndex = 17;
+            this.grpImagenes.TabIndex = 12;
             this.grpImagenes.TabStop = false;
             this.grpImagenes.Text = "Imagenes (una o mas URLs)";
             // 
@@ -239,7 +239,7 @@
             this.lstImagenes.Margin = new System.Windows.Forms.Padding(2);
             this.lstImagenes.Name = "lstImagenes";
             this.lstImagenes.Size = new System.Drawing.Size(366, 82);
-            this.lstImagenes.TabIndex = 18;
+            this.lstImagenes.TabIndex = 4;
             this.lstImagenes.SelectedIndexChanged += new System.EventHandler(this.lstImagenes_SelectedIndexChanged);
             // 
             // picImagen
@@ -248,6 +248,7 @@
             this.picImagen.Margin = new System.Windows.Forms.Padding(2);
             this.picImagen.Name = "picImagen";
             this.picImagen.Size = new System.Drawing.Size(195, 316);
+            this.picImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picImagen.TabIndex = 18;
             this.picImagen.TabStop = false;
             // 
@@ -257,7 +258,7 @@
             this.btnQuitarImagen.Margin = new System.Windows.Forms.Padding(2);
             this.btnQuitarImagen.Name = "btnQuitarImagen";
             this.btnQuitarImagen.Size = new System.Drawing.Size(68, 28);
-            this.btnQuitarImagen.TabIndex = 19;
+            this.btnQuitarImagen.TabIndex = 13;
             this.btnQuitarImagen.Text = "Quitar";
             this.btnQuitarImagen.UseVisualStyleBackColor = true;
             this.btnQuitarImagen.Click += new System.EventHandler(this.btnQuitarImagen_Click);
@@ -267,7 +268,7 @@
             this.btnLimpiar.Location = new System.Drawing.Point(307, 36);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(66, 24);
-            this.btnLimpiar.TabIndex = 20;
+            this.btnLimpiar.TabIndex = 3;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
@@ -294,8 +295,11 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "frmAltaArticulo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo Articulo";
             this.Load += new System.EventHandler(this.frmAltaArticulo_Load);
             this.grpImagenes.ResumeLayout(false);

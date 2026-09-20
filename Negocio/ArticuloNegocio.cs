@@ -202,6 +202,26 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
+
+        public bool ExisteCodigo(string codigo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta("SELECT COUNT(*) FROM ARTICULOS WHERE Codigo = @codigo");
+                datos.setearParametro("@codigo", codigo);
+                return Convert.ToInt32(datos.ejecutarScalar()) > 0;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
         public List<Articulo> filtrar(string campo, string criterio, string filtro)
         {
             List<Articulo> lista = new List<Articulo>();

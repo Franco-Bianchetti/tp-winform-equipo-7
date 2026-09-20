@@ -38,11 +38,13 @@ namespace TPWinForm_equipo_7.Interfaz
             txtNombre.ReadOnly = true;
             txtDescripcion.ReadOnly = true;
             txtPrecio.ReadOnly = true;
+            txtUrlImagen.ReadOnly = true;
             cboMarca.Enabled = false;
             cboCategoria.Enabled = false;
             btnGuardar.Visible = false;
             btnAgregarImagen.Visible = false;
             btnQuitarImagen.Visible = false;
+            btnLimpiar.Visible = false;
             btnCancelar.Text = "Cerrar";
         }
 
@@ -61,6 +63,12 @@ namespace TPWinForm_equipo_7.Interfaz
             if (!decimal.TryParse(txtPrecio.Text, out decimal precio))
             {
                 MessageBox.Show("Ingresá un precio válido.");
+                return;
+            }
+
+            if (precio <= 0)
+            {
+                MessageBox.Show("El precio debe ser mayor a cero.");
                 return;
             }
 
@@ -92,6 +100,12 @@ namespace TPWinForm_equipo_7.Interfaz
             }
 
             ArticuloNegocio negocio = new ArticuloNegocio();
+
+            if (articulo.Id == 0 && negocio.ExisteCodigo(txtCodigo.Text))
+            {
+                MessageBox.Show("Ya existe un artículo con ese código. Ingrese uno nuevo");
+                return;
+            }
 
             if (articulo.Id == 0)
             {
@@ -151,6 +165,12 @@ namespace TPWinForm_equipo_7.Interfaz
                 return;
             }
 
+            if (lstImagenes.Items.Contains(url))
+            {
+                MessageBox.Show("La imagen ya fue agregada para este artículo.");
+                return;
+            }
+
             lstImagenes.Items.Add(url);
             lstImagenes.SelectedItem = url;
 
@@ -206,6 +226,11 @@ namespace TPWinForm_equipo_7.Interfaz
                     foreach (Imagen img in articulo.Imagenes)
                     {
                         lstImagenes.Items.Add(img.ImagenUrl);
+                    }
+
+                    if (lstImagenes.Items.Count > 0)
+                    {
+                        lstImagenes.SelectedIndex = 0;
                     }
                 }
             }

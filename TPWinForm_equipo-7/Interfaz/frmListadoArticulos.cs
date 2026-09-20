@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,7 +16,6 @@ namespace TPWinForm_equipo_7.Interfaz
 {
     public partial class frmListadoArticulos : Form
     {
-        private List<Imagen> listaImagen;
         private int indiceImagen = 0;
         private List<Articulo> articulos = new List<Articulo>();
         public frmListadoArticulos()
@@ -67,7 +67,7 @@ namespace TPWinForm_equipo_7.Interfaz
             }
             else
             {
-                cargarImagen("");
+                pbxArticulo.Image = null;
                 lblContadorImagen.Text = "0 / 0";
             }
         }
@@ -81,6 +81,7 @@ namespace TPWinForm_equipo_7.Interfaz
 
                 dgvArticulos.DataSource = null;
                 dgvArticulos.DataSource = articulos;
+                dgvArticulos.ClearSelection();
 
                 configurarGrilla();
 
@@ -189,7 +190,6 @@ namespace TPWinForm_equipo_7.Interfaz
                 lblContadorImagen.Text = "0 / 0";
             }
         }
-
         private void cargarImagen(string imagen)
         {
             try
@@ -198,9 +198,10 @@ namespace TPWinForm_equipo_7.Interfaz
             }
             catch (Exception)
             {
-                pbxArticulo.Load("https://st2.depositphotos.com/2586633/46477/v/950/depositphotos_464771766-stock-illustration-no-photo-or-blank-image.jpg");
+                pbxArticulo.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkcgWR-dDOwwC8gGPVRtJbw-bPjN9ghiDDiMHKLePwJA&s");
             }
         }
+
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
             if (dgvArticulos.CurrentRow == null) return;
@@ -335,30 +336,7 @@ namespace TPWinForm_equipo_7.Interfaz
             dgvArticulos.Columns["Marca"].HeaderText = "Marca";
             dgvArticulos.Columns["Precio"].HeaderText = "Precio";
         }
-        private void btnSiguiente_Click_1(object sender, EventArgs e)
-        {
-            if (dgvArticulos.CurrentRow == null)
-                return;
-
-            Articulo seleccionado =
-                (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-
-            if (seleccionado != null &&
-                seleccionado.Imagenes != null &&
-                seleccionado.Imagenes.Count > 0)
-            {
-                indiceImagen++;
-
-                if (indiceImagen >= seleccionado.Imagenes.Count)
-                    indiceImagen = 0;
-
-                cargarImagen(
-                    seleccionado.Imagenes[indiceImagen].ImagenUrl);
-
-                lblContadorImagen.Text =
-                    $"{indiceImagen + 1} / {seleccionado.Imagenes.Count}";
-            }
-        }
+        
     }
 }
  
